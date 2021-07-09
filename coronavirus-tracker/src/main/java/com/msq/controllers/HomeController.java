@@ -15,7 +15,7 @@ public class HomeController {
 	@Autowired
 	CoronaVirusDataService coronaVirusDataService;
 	
-	@RequestMapping("/")
+	@RequestMapping("https://mairaj-u.github.io/covid19-tracker/")
 	public String home(Model model) {
 		List<LocationStats> allStats=coronaVirusDataService.getAllStats();
 		int totalReportedCases=allStats.stream().mapToInt(stat->stat.getLatestTotalCases()).sum();
