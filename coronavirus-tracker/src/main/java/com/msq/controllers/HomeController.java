@@ -24,7 +24,7 @@ public class HomeController {
 		model.addAttribute("locationStats",allStats);
 		model.addAttribute("totalReportedCases", totalReportedCases);
 		model.addAttribute("totalNewCases", totalNewCases);
-		return "https://github.com/Mairaj-u/covid19-tracker/blob/master/coronavirus-tracker/src/main/resources/templates/Home.html";
+		return "coronavirus-tracker/src/main/resources/templates/Home.html";
 	}
 
 }
