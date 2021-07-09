@@ -24,7 +24,7 @@ public class HomeController {
 		model.addAttribute("locationStats",allStats);
 		model.addAttribute("totalReportedCases", totalReportedCases);
 		model.addAttribute("totalNewCases", totalNewCases);
-		return "Home.html";
+		return "Home";
 	}
 
 }
