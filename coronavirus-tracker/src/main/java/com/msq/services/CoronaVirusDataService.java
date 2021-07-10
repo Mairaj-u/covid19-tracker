@@ -32,7 +32,8 @@ public class CoronaVirusDataService {
 	@Scheduled(cron = "* * 1 * * *")
 	public void fetchVirusData() throws IOException, InterruptedException {
 		List<LocationStats> newStats = new ArrayList<>();
-		HttpClient client = HttpClient.newHttpClient();
+		HttpClient client =HttpClient.newHttpClient();
+		//HttpClient client = HttpClient.newHttpClient();
 		HttpRequest requset = HttpRequest.newBuilder().uri(URI.create(VIRUS_DATA_URL)).build();
 		HttpResponse<String> httpResponse = client.send(requset, HttpResponse.BodyHandlers.ofString());
 		// System.out.println(httpResponse.body());
